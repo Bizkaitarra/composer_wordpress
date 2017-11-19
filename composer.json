@@ -33,7 +33,7 @@
                 "source": {
                     "url": "https://github.com/Bizkaitarra/kaixowp.git",
                     "type": "git",
-                    "reference": "v1.0"
+                    "reference": "v2.0"
                 }
             }
         }

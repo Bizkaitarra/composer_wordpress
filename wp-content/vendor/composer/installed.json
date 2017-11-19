@@ -157,7 +157,7 @@
         "source": {
             "type": "git",
             "url": "https://github.com/Bizkaitarra/kaixowp.git",
-            "reference": "v1.0"
+            "reference": "v2.0"
         },
         "type": "wordpress-plugin",
         "installation-source": "source"

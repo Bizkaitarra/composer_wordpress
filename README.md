@@ -17,3 +17,34 @@ Una vez que se tenga en raiz el fichero json únicamente se deberá hacer uso de
 composer install
 ```
 
+Para instalar la versión 2.0 se cambia el fichero json y se realiza un update.
+```
+composer update
+```
+
+## Resultado final
+
+A continuación adjunto toda la traza de la instalación realizada
+```
+$ composer install
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 4 installs, 0 updates, 0 removals
+  - Installing fancyguy/webroot-installer (1.0.0): Loading from cache
+  - Installing composer/installers (v1.0.16): Loading from cache
+  - Installing wordpress (4.3): Loading from cache
+  - Installing bizkaitarra/kaixowp (master v1.0): Cloning v1.0 from cache
+Writing lock file
+Generating autoload files
+
+njgportatil@LAPTOP-9FBVPV79 MINGW64 ~/Desktop/ZeroXIII/UniServerZ/www/prueba/composer_wordpress (master)
+$ composer update
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 0 installs, 1 update, 0 removals
+  - Updating bizkaitarra/kaixowp master (v1.0 => v2.0):  Checking out v2.0
+Writing lock file
+Generating autoload files
+
+njgportatil@LAPTOP-9FBVPV79 MINGW64 ~/Desktop/ZeroXIII/UniServerZ/www/prueba/composer_wordpress (master)
+```
