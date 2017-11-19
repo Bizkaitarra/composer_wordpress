@@ -1,0 +1,60 @@
+{
+    "name": "jongonzalez",
+    "description": "Instalar Wordpress y un tema previamente subido a github",
+    "authors": [
+        {
+            "name": "Jon Gonzalez",
+            "email": "bizkaitarra@gmail.com",
+            "homepage": "https://www.tudesarrolladorweb.com/"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "wordpress",
+                "type": "webroot",
+                "version": "4.3",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.3.zip"
+                },
+                "require": {
+                    "fancyguy/webroot-installer": "1.0.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "bizkaitarra/kaixowp",
+                "type": "wordpress-plugin",
+                "version": "v1.0",
+                "source": {
+                    "url": "https://github.com/Bizkaitarra/kaixowp.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "config": {
+        "vendor-dir": "wp-content/vendor",
+		"secure-http":false
+    },
+    "require": {
+        "php": ">=5.3",
+        "wordpress": "4.*",
+        "fancyguy/webroot-installer": "1.0.0",
+        "composer/installers": "v1.0.16",
+        "bizkaitarra/kaixowp": "dev-master"
+        
+    },
+    "extra": {
+        "webroot-dir": "wordpress",
+        "webroot-package": "wordpress",
+        "installer-paths": {
+            "wordpress/wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}
